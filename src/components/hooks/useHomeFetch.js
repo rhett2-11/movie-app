@@ -12,8 +12,6 @@ export const useHomeFetch = () => {
 
         const isLoadMore = endpoint.search('page');
 
-        console.log('isLoadMore 👉', isLoadMore);
-
         try {
             const result = await (await fetch(endpoint)).json();
             setState(prev => ({
